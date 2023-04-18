@@ -13,6 +13,10 @@ from flask import Flask, jsonify
 #Setup DB
 engine = create_engine("sqlite:///Resources/")
 
+#Postgres DB
+connection_url = 'postgresql+psycopg2://user:password@localhost:5432/california_housing'
+engine = create_engine(connection_url)
+
 #use Base to reflect DB and reflect tables
 Base = automap_base()
 Base.prepare(engine, reflect=True)
