@@ -21,6 +21,7 @@ Base.prepare(engine, reflect=True)
 print(__name__)
 app = Flask(__name__)
 
+#List available APIs
 @app.route("/")
 def home():
     """List all available api routes."""
