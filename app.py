@@ -11,8 +11,43 @@ from sqlalchemy.sql import exists
 from flask import Flask, jsonify
 
 #Setup DB
-engine = create_engine("sqlite:///Resources/hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/")
 
 #use Base to reflect DB and reflect tables
 Base = automap_base()
 Base.prepare(engine, reflect=True)
+
+#set up flask
+print(__name__)
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    """List all available api routes."""
+    return (
+        f""
+    )
+
+@app.route("/api/v1.0/sql")
+def sql():
+    session = Session(engine)
+    results = session.query().all()
+    session.close
+    #convert list of tuples into normal list
+    #CODE HERE
+
+    return jsonify()
+
+
+
+
+#Creat a dictionary from the raw data and appemd to a list of sql database
+##CODE HERE!
+
+
+
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
