@@ -11,7 +11,7 @@ from sqlalchemy.sql import exists
 from flask import Flask, jsonify
 
 #Setup DB
-engine = create_engine("sqlite:///Resources/")
+engine = create_engine("sqlite:///Resources/Housing_Table.sqlite")
 
 #use Base to reflect DB and reflect tables
 Base = automap_base()
