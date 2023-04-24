@@ -19,7 +19,7 @@ Please note that this project is meant for educational purposes only and the dat
 
 This is a simple Flask web application that provides a RESTful API for accessing data about California housing. The data is stored in an SQLite database, and the API endpoints allow users to filter and retrieve data based on various criteria.
 
-Installation
+# Installation
 To install and run the application, follow these steps:
 
 Clone this repository to your local machine.
@@ -29,7 +29,8 @@ Install the required dependencies: pip install -r requirements.txt
 Initialize the SQLite database: python init_db.py
 Start the Flask application: python app.py
 Open a web browser and navigate to http://localhost:5000/
-API Endpoints
+
+# API Endpoints
 The following API endpoints are available:
 
 /api/housing: Returns all data from the Housing table in the database.
@@ -56,7 +57,7 @@ The following API endpoints are available:
 
 /api/housing/population/<int:value>: Returns all data from the Housing table where the population is equal to the specified value.
 
-Technologies Used
+# Technologies Used
 This project uses the following technologies:
 
 Python
