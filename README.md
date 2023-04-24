@@ -33,17 +33,29 @@ API Endpoints
 The following API endpoints are available:
 
 /api/housing: Returns all data from the Housing table in the database.
+
 /api/housing/distance_to_la/<float:distance>: Returns all data from the Housing table where the distance to Los Angeles is less than or equal to the specified distance (in miles).
+
 /api/housing/distance_to_sf/<float:distance>: Returns all data from the Housing table where the distance to San Francisco is less than or equal to the specified distance (in miles).
+
 /api/housing/distance_to_sd/<float:distance>: Returns all data from the Housing table where the distance to San Diego is less than or equal to the specified distance (in miles).
+
 /api/housing/distance_to_sj/<float:distance>: Returns all data from the Housing table where the distance to San Jose is less than or equal to the specified distance (in miles).
+
 /api/housing/distance_to_coast/<float:distance>: Returns all data from the Housing table where the distance to the coast is less than or equal to the specified distance (in miles).
+
 /api/housing/median_house_value/<int:value>: Returns all data from the Housing table where the median house value is equal to the specified value.
+
 /api/housing/median_income/<int:value>: Returns all data from the Housing table where the median income is equal to the specified value.
+
 /api/housing/median_age/<int:value>: Returns all data from the Housing table where the median age is equal to the specified value.
+
 /api/housing/tot_rooms/<int:value>: Returns all data from the Housing table where the total number of rooms is equal to the specified value.
+
 /api/housing/tot_bedrooms/<int:value>: Returns all data from the Housing table where the total number of bedrooms is equal to the specified value.
+
 /api/housing/population/<int:value>: Returns all data from the Housing table where the population is equal to the specified value.
+
 Technologies Used
 This project uses the following technologies:
 
