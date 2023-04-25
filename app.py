@@ -1,12 +1,4 @@
-import numpy as np
-import re
-import datetime as dt
 import sqlite3
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
-from sqlalchemy.sql import exists
 from flask import Flask, render_template, jsonify
 
 # create a Flask app
