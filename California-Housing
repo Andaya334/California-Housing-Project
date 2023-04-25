@@ -31,4 +31,19 @@ $.getJSON('/api/housing', function(data) {
     }
     // add the marker cluster layer to the map
     map.addLayer(markers);
+    // create a heat map layer using the data
+var heatData = [];
+for (var i = 0; i < data.length; i++) {
+    heatData.push([data[i].Latitude, data[i].Longitude]);
+}
+var heatLayer = L.heatLayer(heatData, {
+    radius: 20,
+    blur: 15,
+    gradient: {
+        0.4: 'blue',
+        0.6: 'green',
+        0.8: 'yellow',
+        1.0: 'red'
+    }
+}).addTo(map);
 });
